@@ -1,12 +1,12 @@
 name: Flow PR
-on:
+on: 
   pull_request:
     branches: [ main ]
-jobs: 
+jobs:
   verificacion:
     runs-on: ubuntu-latest
-    setps:
-      - run: echo "Paso 1
+    steps:
+      - run: echo "Paso 1"
       - run: echo "Paso 2"
       - run: |
           echo "Paso 3"

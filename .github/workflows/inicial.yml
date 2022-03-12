@@ -3,7 +3,14 @@ on:
   push:
     branches: [ develop ]
 jobs: 
+  
   Primera-Etapa:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hola Care Monda"
+  
+  Segunda-Etapa:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Nombre del evento = ${{github.event_name }}"
+      - run: echo "Corriendo en = ${{ runner.os }}"
