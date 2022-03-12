@@ -3,5 +3,5 @@ on: [push]
 jobs: 
   Primera-Etapa:
     runs-on: ubuntu-lastest
-    step:
+    steps:
       - run: echo "Hola Care Monda"
