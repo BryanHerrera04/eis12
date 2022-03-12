@@ -14,3 +14,10 @@ jobs:
     steps:
       - run: echo "Nombre del evento = ${{github.event_name }}"
       - run: echo "Corriendo en = ${{ runner.os }}"
+      - run: echo "Nombre de la branch = ${{ github.ref }}"
+      - name: Clonar repo
+        uses: actions/checkout@v2
+      - run: echo "${{ github.repository }} ha sido clonado"
+      - run: echo "Ruta ${{ github.workspace }}"
+      - run: ls ${{ github.workspace}}
+      - run: echo "Es status es ${{ job.status }}"
